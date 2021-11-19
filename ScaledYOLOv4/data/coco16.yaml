@@ -1,0 +1,14 @@
+# train and val datasets (image directory or *.txt file with image paths)
+#train: \\\\mldisk.sogang.ac.kr\\nfs_shared_\\mscoco\\2017\\train2017  # 118k images
+#val: \\\\mldisk.sogang.ac.kr\\nfs_shared_\\mscoco\\2017\\val2017  # 5k images
+#test: ../coco/testdev2017.txt  # 20k images for submission to https://competitions.codalab.org/competitions/20794
+train: /workspace/dataset/coco2017_16/train  # 118k images
+val: /workspace/dataset/coco2017_16/val  # 5k images
+# number of classes
+nc: 19
+
+# class names
+#names: [ 'bottle', 'chair', 'potted plant', 'cup', 'car', 'dining table', 'book', 'bowl', 'tie', 'vase',
+#         'tv', 'bed', 'couch', 'cell phone', 'lamp', 'frame', 'handbag', 'wine glass', 'flower' ]
+names: [ 'bottle','chair(stool)','potted_plant','glass','car','table','book','bowl','tie','vase',
+         'TV','bed','couch','phone','lamp','frame','handbag','wine_glass','flower' ]
