@@ -15,7 +15,7 @@ def parse_arguments(argv):
     parser.add_argument('--save_path', type=str, required=False,default='/workspace/sample/output')
     parser.add_argument('--weights', nargs='+', type=str, default='/workspace/ScaledYOLOv4/best.pt', help='model.pt path(s)')
     parser.add_argument('--img-size', type=int, default=896, help='inference size (pixels)')
-    parser.add_argument('--conf-thres', type=float, default=0.2, help='object confidence threshold')
+    parser.add_argument('--conf-thres', type=float, default=0.08, help='object confidence threshold')
     parser.add_argument('--iou-thres', type=float, default=0.5, help='IOU threshold for NMS')
     parser.add_argument('--device', default='', help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
     parser.add_argument('--classes', nargs='+', type=int, help='filter by class: --class 0, or --class 0 2 3')
